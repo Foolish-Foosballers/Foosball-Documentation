@@ -17,11 +17,11 @@ General implementation logic of a user starting, playing, and ending a game.
       
     3. 'Create New Player' button.
 3. The user should fill out the information in the form.
-4. If the data is valid and the 'start game' button was selected, start the game and direct the user into the 'scoreboard'.
+4. If the form's data is valid enable the 'start game' button. If the form's data is invalid disable the 'start game' button.
+5. If the data is valid and the 'start game' button was selected, start the game and direct the user into the 'scoreboard'.
 
-   1. If the form's data is valid enable the 'start game' button. If the form's data is invalid disable the 'start game' button.
-   2. If the user selects 'start game' with invalid form data, present the user with an error message and do not let them start the game until the data is corrected.
-   3. Do not allow any instance of the application to go to the 'lobby' again until the current game has been completed.
+   1. If the user selects 'start game' with invalid form data, present the user with an error message and do not let them start the game until the data is corrected.
+   2. Do not allow any instance of the application to go to the 'lobby' again until the current game has been completed.
 
 ## Step 2 - Gameplay
 
