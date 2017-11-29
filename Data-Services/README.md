@@ -19,7 +19,8 @@ players: { *Id:               int,
             TotalGamesPlayed: int,
             SeriesWins:       int,
             TotalPoints:      int,
-            Shutouts:         int }
+            Shutouts:         int,
+            Ranking:          int}
 ```
 The `games` table contains information about a specific game, and it also has a primary key called `Id`. The winner string will either be `"left"` or `"right"`.
 ```
