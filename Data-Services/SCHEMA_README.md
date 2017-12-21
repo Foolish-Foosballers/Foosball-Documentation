@@ -25,7 +25,8 @@ players: { *Id:               int,
 The `games` table contains information about a specific game, and it also has a primary key called `Id`. The winner string will either be `"left"` or `"right"`.
 ```
 games:   { *Id:               int,
-            EndTime:          date,
+            StartTime:        date,
+            Duration:         int,
             Single:           bool,
             LeftScore:        int,
             RightScore:       int
