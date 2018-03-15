@@ -4,7 +4,7 @@ Microservice that will interface with our PostgreSQL database containing informa
 
 ## Database Schema
 
-Our schema consists of four tables: `players`, `games`, `series`, and a relational table called `history`. Their contents are outlined below.
+Our schema consists of four tables: `players`, `games`, `series`, and a relational table called `history`. Their contents are outlined below. For a list of routes used by our app to query these tables, click [here](apidocs.md).
 
 The `players` table contains both player information and player stats, and it has a primary key called `Id`. 
 ```
@@ -20,9 +20,9 @@ players: { *Id:               int,
             SeriesWins:       int,
             TotalPoints:      int,
             Shutouts:         int,
-            Ranking:          int}
+            Ranking:          int }
 ```
-The `games` table contains information about a specific game, and it also has a primary key called `Id`. The winner string will either be `"left"` or `"right"`.
+The `games` table contains information about a specific game, and it also has a primary key called `Id`. The winner string will either be `"left"` or `"right"`. The duration is measured in seconds.
 ```
 games:   { *Id:               int,
             StartTime:        date,
